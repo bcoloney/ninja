@@ -5,6 +5,8 @@ def searchAD(self, username, password):
 
     param: username
     param: password
+    AD_BASE should be defined or modified
+
     """
     cnx = self._getLDAPConnectionAD()
     cnx.simple_bind_s("%s@host" % username, password)
